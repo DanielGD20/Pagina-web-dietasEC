@@ -1,0 +1,63 @@
+
+body {
+  background-color: #7CAED4;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  padding-left: 0%;
+  margin-left: -2%;
+}
+
+.titulo {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center{
+  padding-top: 2%;
+}
+
+.nuevoIngrediente {
+  margin-bottom: 2%;
+}
+
+.col-md-9 {
+  padding-left: 5%;
+  padding-right: 0%;
+}
+
+.blanqueador {
+  color: white;
+  cursor: pointer;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.blanqueador2{
+  color: white;
+  cursor: pointer;
+  padding-bottom: 2%;
+}
+
+#divInicio{
+  padding-top: 10%;
+}
+
+.botonFinal{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.input-group{
+  padding-top: 2%;
+}
