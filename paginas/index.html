@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Esto se agrega para hacer deploy-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" type="image/png"
+        href="https://www.iconbros.com/assets/logo-ba988fad672f61d8a4b9a2ce7707c5ade6c868d2c99af49e74a815200dac0044.png" />
+    <title>Sistema de dietas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" id="inicio">Dietas EC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+            aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="inicio">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="registrar">Registrar nueva receta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="verRecetas">Ver las recetas registradas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="elaborarMenu">Elaborar un menu semanal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Esta es la inicializacion de las diferentes secciones del menu-->
+
+    <div class="text-center" id="divInicio">
+        <div class="card-body">
+            <h1 class="title">¡Bienvenido!</h1>
+            <h3 class="card-text">Con la ayuda de este sistema de dietas podras llevar el control <br> de tu
+                alimentacion y
+                tener una vida mas saludable </h3>
+            <br>
+            <a href="https://github.com/DanielGD20/Pagina-web-dietasEC" class="btn btn-danger">Ver el codigo en
+                GitHub</a>
+        </div>
+    </div>
+
+    <div class="col-md-12" id="registroRecetas">
+        <div class="text-center">
+            <h1>Registro de recetas</h1>
+        </div>
+        <hr>
+        <br>
+        <form action="enviar" method="GET">
+            <input type="text" name="nombre" class="form-control" placeholder="Nombre de la receta">
+            <div id="grupoDeIngredientes">
+                <div class="input-group" id="grupo-0">
+                    <input type="text" class="form-control" placeholder="Ingrediente" id="nombre-0">
+                    <input type="number" class="form-control" placeholder="Cantidad a utilizar" id="cantidad-0">
+                </div>
+            </div>
+            <div class="botonAgregar">
+                <div class="blanqueador">
+                    <a class="col-md-12 btn btn-danger btn-lg" id="botonAgregar2">Agregar un nuevo ingrediente</a>
+                </div>
+            </div>
+            <div class="botonBorrar">
+                <div class="blanqueador2">
+                    <a class="col-md-12 btn btn-danger btn-lg" id="botonBorrar2">Elimina el ultimo ingrediente</a>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" id="preparacion" rows="3"
+                    placeholder="Escriba la preparacion de la receta en cuestion"></textarea>
+            </div>
+
+            <div class="botonFinal">
+                <input type="submit" id="submit" class="col-md-12 btn btn-danger btn-lg" value="Guardar la receta en el menu">
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-12" id="recetasRegistradas">
+        <div class="text-center">
+            <h1>Recetas registradas</h1>
+        </div>
+        <hr>
+    </div>
+
+    <div class="col-md-12" id="menuRecetas">
+        <div class="text-center">
+            <h1>Este es el menu elaborado segun tus recetas registradas</h1>
+        </div>
+        <hr>
+    </div>
+
+    <!--Fin de las secciones-->
+</body>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../js/funcionalidad.js"></script>
+</footer>
+
+</html>
